@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<!--<groups>
+		<run>
+			<include name="smoke"></include>
+		</run>
+	</groups>
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="test_QA.TestCase_2" />
+		</classes>
+	</test>--><!--
+	Test -->
+
+	<!--Example for parallel testing methods from class TestCase_3 -->
+	<!-- <test name="parallel test" parallel="methods">
+		<classes>
+			<class name="test_QA.TestCase_3" />
+		</classes>
+	</test> -->
+
+
+	<!-- opening a testcase(class TestCase_5) in different browsers using parameter annotation-->
+	<test name="ChromeTest">
+	<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="test_QA.TestCase_5" />
+		</classes>
+	</test>
+</suite> <!--
+Suite -->
